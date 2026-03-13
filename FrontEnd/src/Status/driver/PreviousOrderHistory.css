@@ -1,0 +1,55 @@
+/* Previous Order History Component Styles */
+.previous-order-history {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     /* Align center horizontally */
+  }
+  
+  .previous-order-history h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center align the heading */
+  }
+  
+  .previous-order-history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .previous-order-history li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 300px; /* Set a fixed width */
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .previous-order-history li p {
+    margin: 0;
+  }
+  
+  .previous-order-history .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .previous-order-history .delete-btn i {
+    margin-right: 5px;
+  }
+  

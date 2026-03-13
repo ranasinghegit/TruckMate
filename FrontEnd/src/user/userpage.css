@@ -1,0 +1,190 @@
+/* Importing icon font */
+@import url("https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css");
+
+/* Body margin top */
+body {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Styles for each step in the process */
+.steps .step {
+    display: block;
+    width: 100%;
+    margin-bottom: 35px; /* Spacing between steps */
+    text-align: center;
+}
+
+/* Styles for the wrapper of step icons */
+.steps .step .step-icon-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+/* Styles for the before and after pseudo-elements of the step icon wrapper */
+.steps .step .step-icon-wrap::before,
+.steps .step .step-icon-wrap::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 3px;
+    margin-top: -1px;
+    background-color: #e1e7ec; /* Default color of step connector lines */
+    content: '';
+    z-index: 1;
+}
+
+/* Styles for the before pseudo-element of the step icon wrapper */
+.steps .step .step-icon-wrap::before {
+    left: 0;
+}
+
+/* Styles for the after pseudo-element of the step icon wrapper */
+.steps .step .step-icon-wrap::after {
+    right: 0;
+}
+
+/* Styles for the step icons */
+.steps .step .step-icon {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e1e7ec; /* Default border color of step icons */
+    border-radius: 50%;
+    background-color: #f5f5f5; /* Default background color of step icons */
+    color: #374250; /* Default color of step icons */
+    font-size: 38px;
+    line-height: 81px;
+    z-index: 5;
+}
+
+/* Styles for the step titles */
+.steps .step .step-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #606975; /* Default color of step titles */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hides the before pseudo-element of the first step */
+.steps .step:first-child .step-icon-wrap::before {
+    display: none;
+}
+
+/* Hides the after pseudo-element of the last step */
+.steps .step:last-child .step-icon-wrap::after {
+    display: none;
+}
+
+/* Styles for completed steps */
+.steps .step.completed .step-icon-wrap::before,
+.steps .step.completed .step-icon-wrap::after {
+    background-color: #0da9ef; /* Color of connector lines for completed steps */
+}
+
+/* Styles for completed step icons */
+.steps .step.completed .step-icon {
+    border-color: #0da9ef; /* Border color of completed step icons */
+    background-color: #0da9ef; /* Background color of completed step icons */
+    color: #fff; /* Text color of completed step icons */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 576px) {
+    .flex-sm-nowrap .step .step-icon-wrap::before,
+    .flex-sm-nowrap .step .step-icon-wrap::after {
+        display: none; /* Hide connector lines for small devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-md-nowrap .step .step-icon-wrap::before,
+    .flex-md-nowrap .step .step-icon-wrap::after {
+        display: none; /* Hide connector lines for medium devices */
+    }
+}
+
+@media (max-width: 991px) {
+    .flex-lg-nowrap .step .step-icon-wrap::before,
+    .flex-lg-nowrap .step .step-icon-wrap::after {
+        display: none; /* Hide connector lines for large devices */
+    }
+}
+
+@media (max-width: 1200px) {
+    .flex-xl-nowrap .step .step-icon-wrap::before,
+    .flex-xl-nowrap .step .step-icon-wrap::after {
+        display: none; /* Hide connector lines for extra-large devices */
+    }
+}
+
+/* Background colors for faded and secondary backgrounds */
+.bg-faded,
+.bg-secondary {
+    background-color: #f5f5f5 !important; /* Faded and secondary background color */
+}
+
+/* Custom white text color */
+.white-text {
+    color: white; /* White text color */
+}
+
+/* Styles for completed steps with white text color */
+.completed .step-icon {
+    border-color: #0da9ef; /* Border color of completed step icons */
+    background-color: #0da9ef; /* Background color of completed step icons */
+    color: #fff; /* White text color */
+}
+
+/* Styles for completed steps with colored connector lines */
+.completed .step-icon-wrap::before,
+.completed .step-icon-wrap::after {
+    background-color: #0da9ef; /* Color of connector lines for completed steps */
+}
+
+/* Additional styles for order history section */
+.order-history {
+    margin-top: 20px; /* Top margin for order history section */
+}
+
+.order-history h4 {
+    margin-bottom: 15px; /* Bottom margin for order history section title */
+}
+
+/* Styles for list items in the order history section */
+.list-group-item {
+    padding: 15px; /* Padding for list items */
+    margin-bottom: 10px; /* Spacing between list items */
+    border-radius: 5px; /* Border radius for list items */
+}
+
+/* Styles for inner div within list items */
+.list-group-item div {
+    flex-grow: 1; /* Make inner div grow to fill available space */
+}
+
+/* Styles for delete button within list items */
+.list-group-item .btn-danger {
+    margin-left: 10px; /* Left margin for delete button */
+}
+
+/* Additional styles for custom buttons */
+.custom-buttons {
+    margin-bottom: 20px; /* Bottom margin for custom buttons */
+}
+
+/* Container padding */
+.main_container {
+    padding: 20px; /* Padding for main container */
+}
+
+/* Ensure white color for FontAwesome icons */
+.steps .step .step-icon i {
+    color: #fff !important;
+}
